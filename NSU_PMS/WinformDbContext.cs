@@ -11,6 +11,8 @@ namespace NSU_PMS
     internal class WinformDbContext : DbContext
     {
         public DbSet<Test> Tests { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductDetail> ProductDetails { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -23,7 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Forms\" />
+    <Folder Include="Forms\Admin\" />
+    <Folder Include="Forms\General\" />
+    <Folder Include="Forms\Employee\" />
+    <Folder Include="Forms\Client\" />
   </ItemGroup>
 
 </Project>

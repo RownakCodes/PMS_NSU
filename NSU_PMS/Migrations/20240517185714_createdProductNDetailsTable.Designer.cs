@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NSU_PMS;
 
@@ -11,9 +12,11 @@ using NSU_PMS;
 namespace NSU_PMS.Migrations
 {
     [DbContext(typeof(WinformDbContext))]
-    partial class WinformDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240517185714_createdProductNDetailsTable")]
+    partial class createdProductNDetailsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,8 +51,8 @@ namespace NSU_PMS.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
@@ -60,9 +63,6 @@ namespace NSU_PMS.Migrations
 
                     b.Property<int>("StripSize")
                         .HasColumnType("int");
-
-                    b.Property<double>("TotalValuation")
-                        .HasColumnType("float");
 
                     b.HasKey("ID");
 

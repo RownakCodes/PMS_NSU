@@ -1,3 +1,5 @@
+using NSU_PMS.Forms.Products;
+
 namespace NSU_PMS
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace NSU_PMS
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run();
+            Application.Run(new AddProduct());
         }
     }
 }
