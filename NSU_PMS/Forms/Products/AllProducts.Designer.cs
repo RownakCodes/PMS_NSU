@@ -114,19 +114,19 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(12, 29);
+            label9.Font = new Font("Antipasto Pro DemiBold", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(24, 28);
             label9.Name = "label9";
-            label9.Size = new Size(183, 33);
+            label9.Size = new Size(155, 35);
             label9.TabIndex = 31;
             label9.Text = "All Products";
             // 
             // CloseBtn
             // 
             CloseBtn.FlatStyle = FlatStyle.Flat;
-            CloseBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             CloseBtn.ForeColor = Color.IndianRed;
-            CloseBtn.Location = new Point(1391, 24);
+            CloseBtn.Location = new Point(1391, 12);
             CloseBtn.Name = "CloseBtn";
             CloseBtn.Size = new Size(82, 51);
             CloseBtn.TabIndex = 32;
@@ -137,10 +137,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label5.Location = new Point(1050, 505);
+            label5.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            label5.Location = new Point(1050, 503);
             label5.Name = "label5";
-            label5.Size = new Size(164, 20);
+            label5.Size = new Size(165, 23);
             label5.TabIndex = 38;
             label5.Text = "Inventory Valuation";
             // 
@@ -158,10 +158,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label3.Location = new Point(1093, 459);
+            label3.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            label3.Location = new Point(1093, 457);
             label3.Name = "label3";
-            label3.Size = new Size(121, 20);
+            label3.Size = new Size(121, 23);
             label3.TabIndex = 36;
             label3.Text = "Total Quantity";
             // 
@@ -189,7 +189,9 @@
             Controls.Add(CloseBtn);
             Controls.Add(label9);
             Controls.Add(DetailsListView);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "AllProducts";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AllProducts";
             FormClosed += AllProducts_FormClosed;
             Load += AllProducts_Load;

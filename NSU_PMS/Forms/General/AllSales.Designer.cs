@@ -51,10 +51,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label3.Location = new Point(273, 437);
+            label3.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label3.Location = new Point(285, 464);
             label3.Name = "label3";
-            label3.Size = new Size(121, 20);
+            label3.Size = new Size(102, 20);
             label3.TabIndex = 43;
             label3.Text = "Total Quantity";
             // 
@@ -63,7 +63,7 @@
             TotalQuantityTxtBox.BackColor = Color.White;
             TotalQuantityTxtBox.BorderStyle = BorderStyle.FixedSingle;
             TotalQuantityTxtBox.Font = new Font("Lato", 12F);
-            TotalQuantityTxtBox.Location = new Point(400, 430);
+            TotalQuantityTxtBox.Location = new Point(400, 459);
             TotalQuantityTxtBox.Name = "TotalQuantityTxtBox";
             TotalQuantityTxtBox.ReadOnly = true;
             TotalQuantityTxtBox.Size = new Size(253, 27);
@@ -72,9 +72,9 @@
             // CloseBtn
             // 
             CloseBtn.FlatStyle = FlatStyle.Flat;
-            CloseBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
             CloseBtn.ForeColor = Color.IndianRed;
-            CloseBtn.Location = new Point(1024, 8);
+            CloseBtn.Location = new Point(1042, 12);
             CloseBtn.Name = "CloseBtn";
             CloseBtn.Size = new Size(82, 51);
             CloseBtn.TabIndex = 41;
@@ -85,12 +85,12 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(-49, 13);
+            label9.Font = new Font("Lato", 26.25F);
+            label9.Location = new Point(457, 9);
             label9.Name = "label9";
-            label9.Size = new Size(183, 33);
+            label9.Size = new Size(146, 42);
             label9.TabIndex = 40;
-            label9.Text = "All Products";
+            label9.Text = "All Sales";
             // 
             // DetailsListView
             // 
@@ -98,7 +98,7 @@
             DetailsListView.Font = new Font("Lato", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DetailsListView.FullRowSelect = true;
             DetailsListView.GridLines = true;
-            DetailsListView.Location = new Point(12, 65);
+            DetailsListView.Location = new Point(12, 94);
             DetailsListView.MultiSelect = false;
             DetailsListView.Name = "DetailsListView";
             DetailsListView.Size = new Size(1094, 346);
@@ -144,10 +144,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Lato", 16F, FontStyle.Bold);
-            label6.Location = new Point(717, 526);
+            label6.Font = new Font("Antipasto Pro DemiBold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(717, 552);
             label6.Name = "label6";
-            label6.Size = new Size(130, 27);
+            label6.Size = new Size(127, 29);
             label6.TabIndex = 49;
             label6.Text = "Grand Total";
             // 
@@ -156,7 +156,7 @@
             GrandTotalTxtBox.BackColor = Color.White;
             GrandTotalTxtBox.BorderStyle = BorderStyle.FixedSingle;
             GrandTotalTxtBox.Font = new Font("Lato", 16F, FontStyle.Bold);
-            GrandTotalTxtBox.Location = new Point(853, 520);
+            GrandTotalTxtBox.Location = new Point(853, 549);
             GrandTotalTxtBox.Name = "GrandTotalTxtBox";
             GrandTotalTxtBox.ReadOnly = true;
             GrandTotalTxtBox.Size = new Size(253, 33);
@@ -165,10 +165,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label5.Location = new Point(767, 483);
+            label5.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label5.Location = new Point(781, 509);
             label5.Name = "label5";
-            label5.Size = new Size(80, 20);
+            label5.Size = new Size(66, 20);
             label5.TabIndex = 47;
             label5.Text = "Discount";
             // 
@@ -177,7 +177,7 @@
             DiscountTxtBox.BackColor = Color.White;
             DiscountTxtBox.BorderStyle = BorderStyle.FixedSingle;
             DiscountTxtBox.Font = new Font("Lato", 12F);
-            DiscountTxtBox.Location = new Point(853, 476);
+            DiscountTxtBox.Location = new Point(853, 505);
             DiscountTxtBox.Name = "DiscountTxtBox";
             DiscountTxtBox.ReadOnly = true;
             DiscountTxtBox.Size = new Size(253, 27);
@@ -186,10 +186,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label1.Location = new Point(798, 432);
+            label1.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label1.Location = new Point(810, 459);
             label1.Name = "label1";
-            label1.Size = new Size(49, 20);
+            label1.Size = new Size(40, 20);
             label1.TabIndex = 45;
             label1.Text = "Total";
             // 
@@ -198,7 +198,7 @@
             TotalTxtBox.BackColor = Color.White;
             TotalTxtBox.BorderStyle = BorderStyle.FixedSingle;
             TotalTxtBox.Font = new Font("Lato", 12F);
-            TotalTxtBox.Location = new Point(853, 430);
+            TotalTxtBox.Location = new Point(853, 459);
             TotalTxtBox.Name = "TotalTxtBox";
             TotalTxtBox.ReadOnly = true;
             TotalTxtBox.Size = new Size(253, 27);
@@ -209,7 +209,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1136, 590);
+            ClientSize = new Size(1136, 626);
             Controls.Add(label6);
             Controls.Add(GrandTotalTxtBox);
             Controls.Add(label5);
@@ -221,7 +221,9 @@
             Controls.Add(CloseBtn);
             Controls.Add(label9);
             Controls.Add(DetailsListView);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "AllSales";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "AllSales";
             FormClosed += AllSales_FormClosed;
             Load += AllSales_Load;

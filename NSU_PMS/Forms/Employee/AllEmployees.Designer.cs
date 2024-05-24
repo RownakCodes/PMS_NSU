@@ -42,7 +42,7 @@
             // CloseBtn
             // 
             CloseBtn.FlatStyle = FlatStyle.Flat;
-            CloseBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CloseBtn.ForeColor = Color.IndianRed;
             CloseBtn.Location = new Point(1373, 7);
             CloseBtn.Name = "CloseBtn";
@@ -55,10 +55,10 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Antipasto Pro DemiBold", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.Location = new Point(23, 23);
             label9.Name = "label9";
-            label9.Size = new Size(198, 33);
+            label9.Size = new Size(165, 35);
             label9.TabIndex = 30;
             label9.Text = "All Employee";
             // 
@@ -115,7 +115,9 @@
             Controls.Add(CloseBtn);
             Controls.Add(label9);
             Controls.Add(DetailsListView);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "AllEmployees";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AllEmployees";
             FormClosed += AllEmployees_FormClosed;
             Load += AllEmployees_Load;

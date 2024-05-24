@@ -71,7 +71,7 @@
             // SaveBtn
             // 
             SaveBtn.FlatStyle = FlatStyle.Flat;
-            SaveBtn.Font = new Font("Lato", 14F);
+            SaveBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             SaveBtn.ForeColor = Color.Green;
             SaveBtn.Location = new Point(559, 373);
             SaveBtn.Name = "SaveBtn";
