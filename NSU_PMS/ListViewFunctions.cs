@@ -20,7 +20,7 @@ namespace NSU_PMS
             return false;
         }
 
-        public static decimal CalculateColumnSum(ListView listView, int columnIndex)
+        public static double CalculateColumnSum(ListView listView, int columnIndex)
         {
             if (listView == null || listView.Items.Count == 0)
                 return 0;
@@ -29,15 +29,15 @@ namespace NSU_PMS
             {
                 return listView.Items
                     .Cast<ListViewItem>()
-                    .Sum(item => decimal.Parse(item.SubItems[columnIndex].Text));
+                    .Sum(item => double.Parse(item.SubItems[columnIndex].Text));
             }
             else
             {
-                decimal sum = 0;
+                double sum = 0;
                 foreach (ListViewItem item in listView.Items)
                 {
-                    decimal value;
-                    if (decimal.TryParse(item.SubItems[columnIndex].Text, out value))
+                    double value;
+                    if (double.TryParse(item.SubItems[columnIndex].Text, out value))
                     {
                         sum += value;
                     }
