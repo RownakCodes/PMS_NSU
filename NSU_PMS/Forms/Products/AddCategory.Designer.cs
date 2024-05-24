@@ -30,15 +30,18 @@
         {
             DescriptionTxtBox = new TextBox();
             label7 = new Label();
-            label2 = new Label();
             CategoryTxtBox = new TextBox();
             SaveBtn = new Button();
+            panel2 = new Panel();
+            CloseBtn = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // DescriptionTxtBox
             // 
+            DescriptionTxtBox.BorderStyle = BorderStyle.FixedSingle;
             DescriptionTxtBox.Font = new Font("Lato", 12F);
-            DescriptionTxtBox.Location = new Point(12, 131);
+            DescriptionTxtBox.Location = new Point(12, 181);
             DescriptionTxtBox.Multiline = true;
             DescriptionTxtBox.Name = "DescriptionTxtBox";
             DescriptionTxtBox.Size = new Size(682, 168);
@@ -47,53 +50,85 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Lato", 12F);
-            label7.Location = new Point(12, 109);
+            label7.Font = new Font("Antipasto Pro DemiBold", 11.249999F, FontStyle.Bold);
+            label7.Location = new Point(12, 159);
             label7.Name = "label7";
-            label7.Size = new Size(90, 19);
+            label7.Size = new Size(78, 19);
             label7.TabIndex = 19;
             label7.Text = "Description";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Lato", 12F);
-            label2.Location = new Point(12, 30);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 19);
-            label2.TabIndex = 16;
-            label2.Text = "Category";
-            // 
             // CategoryTxtBox
             // 
-            CategoryTxtBox.Font = new Font("Lato", 12F);
-            CategoryTxtBox.Location = new Point(12, 52);
+            CategoryTxtBox.BorderStyle = BorderStyle.None;
+            CategoryTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
+            CategoryTxtBox.Location = new Point(12, 102);
+            CategoryTxtBox.Multiline = true;
             CategoryTxtBox.Name = "CategoryTxtBox";
-            CategoryTxtBox.Size = new Size(331, 27);
+            CategoryTxtBox.PlaceholderText = "Type Your Category";
+            CategoryTxtBox.Size = new Size(331, 23);
             CategoryTxtBox.TabIndex = 15;
             // 
             // SaveBtn
             // 
+            SaveBtn.FlatStyle = FlatStyle.Flat;
             SaveBtn.Font = new Font("Lato", 14F);
-            SaveBtn.Location = new Point(565, 341);
+            SaveBtn.ForeColor = Color.Green;
+            SaveBtn.Location = new Point(559, 373);
             SaveBtn.Name = "SaveBtn";
-            SaveBtn.Size = new Size(129, 57);
+            SaveBtn.Size = new Size(135, 57);
             SaveBtn.TabIndex = 21;
             SaveBtn.Text = "Save";
             SaveBtn.UseVisualStyleBackColor = true;
             SaveBtn.Click += SaveBtn_Click;
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Black;
+            panel2.Location = new Point(13, 131);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(330, 1);
+            panel2.TabIndex = 24;
+            // 
+            // CloseBtn
+            // 
+            CloseBtn.FlatStyle = FlatStyle.Flat;
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.ForeColor = Color.IndianRed;
+            CloseBtn.Location = new Point(614, 16);
+            CloseBtn.Name = "CloseBtn";
+            CloseBtn.Size = new Size(80, 51);
+            CloseBtn.TabIndex = 29;
+            CloseBtn.Text = "Close";
+            CloseBtn.UseVisualStyleBackColor = true;
+            CloseBtn.Click += CloseBtn_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Lato", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(233, 23);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(231, 42);
+            label3.TabIndex = 30;
+            label3.Text = "Add Category";
+            // 
             // AddCategory
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(711, 410);
+            BackColor = Color.White;
+            ClientSize = new Size(710, 450);
+            Controls.Add(label3);
+            Controls.Add(CloseBtn);
+            Controls.Add(panel2);
             Controls.Add(SaveBtn);
             Controls.Add(DescriptionTxtBox);
             Controls.Add(label7);
-            Controls.Add(label2);
             Controls.Add(CategoryTxtBox);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "AddCategory";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddCategory";
             FormClosed += AddCategory_FormClosed;
             Load += AddCategory_Load;
@@ -105,8 +140,10 @@
 
         private TextBox DescriptionTxtBox;
         private Label label7;
-        private Label label2;
         private TextBox CategoryTxtBox;
         private Button SaveBtn;
+        private Panel panel2;
+        private Button CloseBtn;
+        private Label label3;
     }
 }

@@ -55,7 +55,12 @@ namespace NSU_PMS.Forms.Client
 
         private void AddClient_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Global.dashboard.Show ();
+            Global.dashboard.Show();
+        }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

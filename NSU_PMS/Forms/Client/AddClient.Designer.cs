@@ -33,39 +33,44 @@
             SaveBtn = new Button();
             label7 = new Label();
             AddressTxtBox = new TextBox();
-            label4 = new Label();
             PhoneTxtBox = new TextBox();
-            label2 = new Label();
             EmailTxtBox = new TextBox();
-            label1 = new Label();
             NameTxtBox = new TextBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            label3 = new Label();
+            CloseBtn = new Button();
             SuspendLayout();
             // 
             // ComentTxtBox
             // 
             ComentTxtBox.AutoSize = true;
-            ComentTxtBox.Font = new Font("Lato", 12F);
-            ComentTxtBox.Location = new Point(371, 81);
+            ComentTxtBox.Font = new Font("Antipasto Pro DemiBold", 11.249999F, FontStyle.Bold);
+            ComentTxtBox.ForeColor = Color.Black;
+            ComentTxtBox.Location = new Point(790, 88);
             ComentTxtBox.Name = "ComentTxtBox";
-            ComentTxtBox.Size = new Size(85, 19);
+            ComentTxtBox.Size = new Size(74, 19);
             ComentTxtBox.TabIndex = 37;
             ComentTxtBox.Text = "Comments";
             // 
             // CommentsTxtBox
             // 
+            CommentsTxtBox.BorderStyle = BorderStyle.FixedSingle;
             CommentsTxtBox.Font = new Font("Lato", 12F);
-            CommentsTxtBox.Location = new Point(371, 103);
+            CommentsTxtBox.Location = new Point(790, 110);
             CommentsTxtBox.Multiline = true;
             CommentsTxtBox.Name = "CommentsTxtBox";
-            CommentsTxtBox.Size = new Size(331, 93);
+            CommentsTxtBox.Size = new Size(321, 180);
             CommentsTxtBox.TabIndex = 36;
             // 
             // SaveBtn
             // 
-            SaveBtn.Font = new Font("Lato", 14F);
-            SaveBtn.Location = new Point(959, 139);
+            SaveBtn.FlatStyle = FlatStyle.Flat;
+            SaveBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            SaveBtn.Location = new Point(1157, 110);
             SaveBtn.Name = "SaveBtn";
-            SaveBtn.Size = new Size(129, 57);
+            SaveBtn.Size = new Size(145, 51);
             SaveBtn.TabIndex = 35;
             SaveBtn.Text = "Save";
             SaveBtn.UseVisualStyleBackColor = true;
@@ -74,93 +79,129 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Lato", 12F);
-            label7.Location = new Point(12, 81);
+            label7.Font = new Font("Antipasto Pro DemiBold", 11.249999F, FontStyle.Bold);
+            label7.ForeColor = Color.Black;
+            label7.Location = new Point(431, 88);
             label7.Name = "label7";
-            label7.Size = new Size(66, 19);
+            label7.Size = new Size(59, 19);
             label7.TabIndex = 34;
             label7.Text = "Address";
             // 
             // AddressTxtBox
             // 
+            AddressTxtBox.BorderStyle = BorderStyle.FixedSingle;
             AddressTxtBox.Font = new Font("Lato", 12F);
-            AddressTxtBox.Location = new Point(12, 103);
+            AddressTxtBox.Location = new Point(431, 110);
             AddressTxtBox.Multiline = true;
             AddressTxtBox.Name = "AddressTxtBox";
-            AddressTxtBox.Size = new Size(331, 93);
+            AddressTxtBox.Size = new Size(321, 180);
             AddressTxtBox.TabIndex = 33;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Lato", 12F);
-            label4.Location = new Point(757, 9);
-            label4.Name = "label4";
-            label4.Size = new Size(54, 19);
-            label4.TabIndex = 28;
-            label4.Text = "Phone";
             // 
             // PhoneTxtBox
             // 
-            PhoneTxtBox.Font = new Font("Lato", 12F);
-            PhoneTxtBox.Location = new Point(757, 31);
+            PhoneTxtBox.BorderStyle = BorderStyle.None;
+            PhoneTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
+            PhoneTxtBox.Location = new Point(30, 256);
+            PhoneTxtBox.Multiline = true;
             PhoneTxtBox.Name = "PhoneTxtBox";
-            PhoneTxtBox.Size = new Size(331, 27);
+            PhoneTxtBox.PlaceholderText = "Enter Your Phone Number";
+            PhoneTxtBox.Size = new Size(331, 23);
             PhoneTxtBox.TabIndex = 27;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Lato", 12F);
-            label2.Location = new Point(371, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 19);
-            label2.TabIndex = 24;
-            label2.Text = "Email";
             // 
             // EmailTxtBox
             // 
-            EmailTxtBox.Font = new Font("Lato", 12F);
-            EmailTxtBox.Location = new Point(371, 31);
+            EmailTxtBox.BorderStyle = BorderStyle.None;
+            EmailTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
+            EmailTxtBox.Location = new Point(31, 180);
+            EmailTxtBox.Multiline = true;
             EmailTxtBox.Name = "EmailTxtBox";
-            EmailTxtBox.Size = new Size(331, 27);
+            EmailTxtBox.PlaceholderText = "Enter Your Email";
+            EmailTxtBox.Size = new Size(331, 23);
             EmailTxtBox.TabIndex = 23;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lato", 12F);
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 19);
-            label1.TabIndex = 22;
-            label1.Text = "Name";
             // 
             // NameTxtBox
             // 
-            NameTxtBox.Font = new Font("Lato", 12F);
-            NameTxtBox.Location = new Point(12, 31);
+            NameTxtBox.BorderStyle = BorderStyle.None;
+            NameTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
+            NameTxtBox.Location = new Point(31, 91);
+            NameTxtBox.Multiline = true;
             NameTxtBox.Name = "NameTxtBox";
-            NameTxtBox.Size = new Size(331, 27);
+            NameTxtBox.PlaceholderText = "Enter Your Name";
+            NameTxtBox.Size = new Size(331, 26);
             NameTxtBox.TabIndex = 21;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Black;
+            panel1.Location = new Point(30, 122);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(331, 1);
+            panel1.TabIndex = 38;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Black;
+            panel2.Location = new Point(31, 209);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(331, 1);
+            panel2.TabIndex = 39;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Black;
+            panel3.Location = new Point(30, 285);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(331, 1);
+            panel3.TabIndex = 40;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Lato", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(569, 9);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(181, 42);
+            label3.TabIndex = 41;
+            label3.Text = "Add Client";
+            // 
+            // CloseBtn
+            // 
+            CloseBtn.FlatStyle = FlatStyle.Flat;
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.ForeColor = Color.IndianRed;
+            CloseBtn.Location = new Point(1157, 180);
+            CloseBtn.Name = "CloseBtn";
+            CloseBtn.Size = new Size(145, 51);
+            CloseBtn.TabIndex = 42;
+            CloseBtn.Text = "Close";
+            CloseBtn.UseVisualStyleBackColor = true;
+            CloseBtn.Click += CloseBtn_Click;
             // 
             // AddClient
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1112, 218);
+            BackColor = Color.White;
+            ClientSize = new Size(1339, 344);
+            Controls.Add(CloseBtn);
+            Controls.Add(label3);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(ComentTxtBox);
             Controls.Add(CommentsTxtBox);
             Controls.Add(SaveBtn);
             Controls.Add(label7);
             Controls.Add(AddressTxtBox);
-            Controls.Add(label4);
             Controls.Add(PhoneTxtBox);
-            Controls.Add(label2);
             Controls.Add(EmailTxtBox);
-            Controls.Add(label1);
             Controls.Add(NameTxtBox);
+            ForeColor = Color.Green;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "AddClient";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddClient";
             FormClosed += AddClient_FormClosed;
             ResumeLayout(false);
@@ -174,11 +215,13 @@
         private Button SaveBtn;
         private Label label7;
         private TextBox AddressTxtBox;
-        private Label label4;
         private TextBox PhoneTxtBox;
-        private Label label2;
         private TextBox EmailTxtBox;
-        private Label label1;
         private TextBox NameTxtBox;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label3;
+        private Button CloseBtn;
     }
 }

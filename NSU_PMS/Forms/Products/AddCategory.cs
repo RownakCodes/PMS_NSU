@@ -59,5 +59,10 @@ namespace NSU_PMS.Forms.Products
 
             Global.dashboard.Show();
         }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
