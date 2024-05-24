@@ -21,14 +21,7 @@ namespace NSU_PMS.Models
         public DateTime DateTime { get; set; }
 
 
-
-
-
-
-
-
-
-
+        
 
         public Category() { }
 

@@ -45,5 +45,10 @@ namespace NSU_PMS.Forms.Client
         {
             this.Close();
         }
+
+        private void DetailsListView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -86,5 +86,26 @@ namespace NSU_PMS.Forms.General
             allClients.Show();
             this.Hide();
         }
+
+        private void AllEmpBtn_Click(object sender, EventArgs e)
+        {
+            AllEmployees allEmployees = new AllEmployees();
+            allEmployees.Show();
+            this.Hide();
+        }
+
+        private void AllProductsBtn_Click(object sender, EventArgs e)
+        {
+            AllProducts allProducts = new AllProducts();
+            allProducts.Show();
+            this.Hide();
+        }
+
+        private void SeeSalesBtn_Click(object sender, EventArgs e)
+        {
+            AllSales allSales = new AllSales();
+            allSales.Show();
+            this.Hide();
+        }
     }
 }
