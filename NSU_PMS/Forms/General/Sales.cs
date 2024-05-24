@@ -214,14 +214,15 @@ namespace NSU_PMS.Forms.General
             double result;
             try
             {
-                
+
                 if (GrandTotalTxtBox.Text != null || GrandTotalTxtBox.Text != "")
                 {
                     Random random = new Random();
                     string mid = "Sales-" + random.Next(10000, 99999) + "-" + random.Next(10000, 99999) + "-" + random.Next(10000, 99999);
 
                     string cid = "";
-                    if(ClientComboBox.SelectedIndex != -1) {
+                    if (ClientComboBox.SelectedIndex != -1)
+                    {
                         cid = ClientComboBox.SelectedValue.ToString();
                     }
 
@@ -241,8 +242,8 @@ namespace NSU_PMS.Forms.General
 
                     foreach (ListViewItem lv in DetailsListView.Items)
                     {
-                        var product = await _windb.Products.Where(c=>c.ID == lv.SubItems[0].Text).FirstOrDefaultAsync();
-                        var productDetails = await _windb.ProductDetails.Where(c=>c.ProductID == lv.SubItems[0].Text).ToListAsync();
+                        var product = await _windb.Products.Where(c => c.ID == lv.SubItems[0].Text).FirstOrDefaultAsync();
+                        var productDetails = await _windb.ProductDetails.Where(c => c.ProductID == lv.SubItems[0].Text).ToListAsync();
                         int quantitySold = int.Parse(lv.SubItems[2].Text);
                         product.Quantity -= quantitySold;
                         int q = quantitySold;
@@ -296,7 +297,7 @@ namespace NSU_PMS.Forms.General
                             Price = price,
                             Discount = discount,
                             Quantity = q,
-                         });
+                        });
                     }
                 }
 
@@ -314,6 +315,11 @@ namespace NSU_PMS.Forms.General
             {
                 this.Enabled = true;
             }
+        }
+
+        private void CloseBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

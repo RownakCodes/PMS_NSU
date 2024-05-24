@@ -28,85 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label5 = new Label();
             PassTxtBox = new TextBox();
-            label2 = new Label();
             EmailTxtBox = new TextBox();
             LoginBtn = new Button();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            panel1 = new Panel();
+            pictureBox3 = new PictureBox();
+            panel2 = new Panel();
+            label3 = new Label();
+            CloseBtn = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Lato", 12F);
-            label5.Location = new Point(232, 199);
-            label5.Name = "label5";
-            label5.Size = new Size(77, 19);
-            label5.TabIndex = 16;
-            label5.Text = "Password";
             // 
             // PassTxtBox
             // 
-            PassTxtBox.Font = new Font("Lato", 12F);
-            PassTxtBox.Location = new Point(232, 221);
+            PassTxtBox.BorderStyle = BorderStyle.None;
+            PassTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
+            PassTxtBox.Location = new Point(719, 295);
+            PassTxtBox.Multiline = true;
             PassTxtBox.Name = "PassTxtBox";
             PassTxtBox.PasswordChar = '*';
-            PassTxtBox.Size = new Size(331, 27);
+            PassTxtBox.PlaceholderText = " Enter Your Password";
+            PassTxtBox.Size = new Size(362, 23);
             PassTxtBox.TabIndex = 15;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Lato", 12F);
-            label2.Location = new Point(232, 127);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 19);
-            label2.TabIndex = 14;
-            label2.Text = "Email";
             // 
             // EmailTxtBox
             // 
-            EmailTxtBox.Font = new Font("Lato", 12F);
-            EmailTxtBox.Location = new Point(232, 149);
+            EmailTxtBox.BorderStyle = BorderStyle.None;
+            EmailTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            EmailTxtBox.Location = new Point(719, 188);
+            EmailTxtBox.Multiline = true;
             EmailTxtBox.Name = "EmailTxtBox";
-            EmailTxtBox.Size = new Size(331, 27);
+            EmailTxtBox.PlaceholderText = " Enter Your Email";
+            EmailTxtBox.Size = new Size(362, 23);
             EmailTxtBox.TabIndex = 13;
             // 
             // LoginBtn
             // 
-            LoginBtn.Font = new Font("Lato", 14F);
-            LoginBtn.Location = new Point(320, 312);
+            LoginBtn.FlatStyle = FlatStyle.Popup;
+            LoginBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LoginBtn.Location = new Point(769, 395);
             LoginBtn.Name = "LoginBtn";
-            LoginBtn.Size = new Size(129, 57);
+            LoginBtn.Size = new Size(230, 51);
             LoginBtn.TabIndex = 19;
             LoginBtn.Text = "Log In";
             LoginBtn.UseVisualStyleBackColor = true;
             LoginBtn.Click += LoginBtn_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.tiny_pharmacist_with_medicine_drug_pill_vitamin_vector_40268939;
+            pictureBox1.Location = new Point(2, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(613, 582);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 20;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources._5087579;
+            pictureBox2.Location = new Point(653, 165);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(60, 50);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 21;
+            pictureBox2.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Black;
+            panel1.Location = new Point(719, 216);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(362, 1);
+            panel1.TabIndex = 22;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources._1000915;
+            pictureBox3.Location = new Point(653, 269);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(60, 50);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Black;
+            panel2.Location = new Point(719, 324);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(362, 1);
+            panel2.TabIndex = 22;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Antipasto Pro ", 47.9999962F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(779, 32);
+            label3.Name = "label3";
+            label3.Size = new Size(198, 74);
+            label3.TabIndex = 26;
+            label3.Text = "Sign In";
+            // 
+            // CloseBtn
+            // 
+            CloseBtn.FlatStyle = FlatStyle.Flat;
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.ForeColor = Color.IndianRed;
+            CloseBtn.Location = new Point(769, 469);
+            CloseBtn.Name = "CloseBtn";
+            CloseBtn.Size = new Size(230, 51);
+            CloseBtn.TabIndex = 27;
+            CloseBtn.Text = "Close";
+            CloseBtn.UseVisualStyleBackColor = true;
+            CloseBtn.Click += CloseBtn_Click;
+            // 
             // SignIn
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.White;
+            ClientSize = new Size(1156, 582);
+            Controls.Add(CloseBtn);
+            Controls.Add(label3);
+            Controls.Add(pictureBox3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(LoginBtn);
-            Controls.Add(label5);
             Controls.Add(PassTxtBox);
-            Controls.Add(label2);
             Controls.Add(EmailTxtBox);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "SignIn";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SignIn";
             FormClosed += SignIn_FormClosed;
             Load += SignIn_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label5;
         private TextBox PassTxtBox;
-        private Label label2;
         private TextBox EmailTxtBox;
         private Button LoginBtn;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Panel panel1;
+        private PictureBox pictureBox3;
+        private Panel panel2;
+        private Label label3;
+        private Button CloseBtn;
     }
 }

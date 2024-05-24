@@ -35,25 +35,31 @@
             AddClientBtn = new Button();
             SalesBtn = new Button();
             SeeClientsBtn = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // AddProductBtn
             // 
-            AddProductBtn.Font = new Font("Lato", 14F);
-            AddProductBtn.Location = new Point(22, 45);
+            AddProductBtn.BackColor = Color.Transparent;
+            AddProductBtn.FlatStyle = FlatStyle.Popup;
+            AddProductBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddProductBtn.Location = new Point(40, 99);
+            AddProductBtn.Margin = new Padding(4, 3, 4, 3);
             AddProductBtn.Name = "AddProductBtn";
-            AddProductBtn.Size = new Size(257, 57);
+            AddProductBtn.Size = new Size(257, 51);
             AddProductBtn.TabIndex = 20;
             AddProductBtn.Text = "Add Product";
-            AddProductBtn.UseVisualStyleBackColor = true;
+            AddProductBtn.UseVisualStyleBackColor = false;
             AddProductBtn.Click += AddProductBtn_Click;
             // 
             // AddCategoryBtn
             // 
-            AddCategoryBtn.Font = new Font("Lato", 14F);
-            AddCategoryBtn.Location = new Point(22, 146);
+            AddCategoryBtn.FlatStyle = FlatStyle.Popup;
+            AddCategoryBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddCategoryBtn.Location = new Point(40, 200);
+            AddCategoryBtn.Margin = new Padding(4, 3, 4, 3);
             AddCategoryBtn.Name = "AddCategoryBtn";
-            AddCategoryBtn.Size = new Size(257, 57);
+            AddCategoryBtn.Size = new Size(257, 51);
             AddCategoryBtn.TabIndex = 21;
             AddCategoryBtn.Text = "Add Category";
             AddCategoryBtn.UseVisualStyleBackColor = true;
@@ -61,10 +67,12 @@
             // 
             // AddEmployeeBtn
             // 
-            AddEmployeeBtn.Font = new Font("Lato", 14F);
-            AddEmployeeBtn.Location = new Point(22, 249);
+            AddEmployeeBtn.FlatStyle = FlatStyle.Popup;
+            AddEmployeeBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddEmployeeBtn.Location = new Point(632, 200);
+            AddEmployeeBtn.Margin = new Padding(4, 3, 4, 3);
             AddEmployeeBtn.Name = "AddEmployeeBtn";
-            AddEmployeeBtn.Size = new Size(257, 57);
+            AddEmployeeBtn.Size = new Size(257, 51);
             AddEmployeeBtn.TabIndex = 22;
             AddEmployeeBtn.Text = "Add Employee";
             AddEmployeeBtn.UseVisualStyleBackColor = true;
@@ -72,10 +80,13 @@
             // 
             // ExitBtn
             // 
-            ExitBtn.Font = new Font("Lato", 14F);
-            ExitBtn.Location = new Point(22, 346);
+            ExitBtn.FlatStyle = FlatStyle.Popup;
+            ExitBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            ExitBtn.ForeColor = Color.IndianRed;
+            ExitBtn.Location = new Point(337, 303);
+            ExitBtn.Margin = new Padding(4, 3, 4, 3);
             ExitBtn.Name = "ExitBtn";
-            ExitBtn.Size = new Size(257, 57);
+            ExitBtn.Size = new Size(257, 51);
             ExitBtn.TabIndex = 23;
             ExitBtn.Text = "Exit";
             ExitBtn.UseVisualStyleBackColor = true;
@@ -83,10 +94,12 @@
             // 
             // AddClientBtn
             // 
-            AddClientBtn.Font = new Font("Lato", 14F);
-            AddClientBtn.Location = new Point(319, 45);
+            AddClientBtn.FlatStyle = FlatStyle.Popup;
+            AddClientBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddClientBtn.Location = new Point(337, 99);
+            AddClientBtn.Margin = new Padding(4, 3, 4, 3);
             AddClientBtn.Name = "AddClientBtn";
-            AddClientBtn.Size = new Size(257, 57);
+            AddClientBtn.Size = new Size(257, 51);
             AddClientBtn.TabIndex = 24;
             AddClientBtn.Text = "Add Client";
             AddClientBtn.UseVisualStyleBackColor = true;
@@ -94,10 +107,12 @@
             // 
             // SalesBtn
             // 
-            SalesBtn.Font = new Font("Lato", 14F);
-            SalesBtn.Location = new Point(319, 146);
+            SalesBtn.FlatStyle = FlatStyle.Popup;
+            SalesBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            SalesBtn.Location = new Point(337, 200);
+            SalesBtn.Margin = new Padding(4, 3, 4, 3);
             SalesBtn.Name = "SalesBtn";
-            SalesBtn.Size = new Size(257, 57);
+            SalesBtn.Size = new Size(257, 51);
             SalesBtn.TabIndex = 25;
             SalesBtn.Text = "Sales";
             SalesBtn.UseVisualStyleBackColor = true;
@@ -105,20 +120,35 @@
             // 
             // SeeClientsBtn
             // 
-            SeeClientsBtn.Font = new Font("Lato", 14F);
-            SeeClientsBtn.Location = new Point(614, 45);
+            SeeClientsBtn.FlatStyle = FlatStyle.Popup;
+            SeeClientsBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            SeeClientsBtn.Location = new Point(632, 99);
+            SeeClientsBtn.Margin = new Padding(4, 3, 4, 3);
             SeeClientsBtn.Name = "SeeClientsBtn";
-            SeeClientsBtn.Size = new Size(257, 57);
+            SeeClientsBtn.Size = new Size(257, 51);
             SeeClientsBtn.TabIndex = 26;
             SeeClientsBtn.Text = "See Clients";
             SeeClientsBtn.UseVisualStyleBackColor = true;
             SeeClientsBtn.Click += SeeClientsBtn_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Lato", 27.7499962F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(355, 17);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(211, 45);
+            label3.TabIndex = 27;
+            label3.Text = "Dash Board";
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1039, 450);
+            BackColor = Color.White;
+            ClientSize = new Size(934, 410);
+            Controls.Add(label3);
             Controls.Add(SeeClientsBtn);
             Controls.Add(SalesBtn);
             Controls.Add(AddClientBtn);
@@ -126,11 +156,15 @@
             Controls.Add(AddEmployeeBtn);
             Controls.Add(AddCategoryBtn);
             Controls.Add(AddProductBtn);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4, 3, 4, 3);
             Name = "DashBoard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DashBoard";
             FormClosed += DashBoard_FormClosed;
             Load += DashBoard_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -142,5 +176,6 @@
         private Button AddClientBtn;
         private Button SalesBtn;
         private Button SeeClientsBtn;
+        private Label label3;
     }
 }

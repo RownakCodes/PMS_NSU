@@ -39,7 +39,6 @@
             Client = new Label();
             ClientComboBox = new ComboBox();
             button1 = new Button();
-            label4 = new Label();
             QuantityTxtBox = new TextBox();
             label2 = new Label();
             ProductNameComboBox = new ComboBox();
@@ -53,36 +52,40 @@
             ComentTxtBox = new Label();
             ClientInfoTxtBox = new TextBox();
             SalesBtn = new Button();
+            label1 = new Label();
+            panel1 = new Panel();
+            CloseBtn = new Button();
             SuspendLayout();
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Lato", 12F);
-            label9.Location = new Point(12, 9);
+            label9.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label9.Location = new Point(29, 84);
             label9.Name = "label9";
-            label9.Size = new Size(73, 19);
+            label9.Size = new Size(71, 20);
             label9.TabIndex = 20;
             label9.Text = "Category";
             // 
             // CategoryComboBox
             // 
-            CategoryComboBox.FormattingEnabled = true;
-            CategoryComboBox.Location = new Point(14, 31);
+            CategoryComboBox.Font = new Font("Antipasto Pro Bold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CategoryComboBox.Location = new Point(29, 106);
             CategoryComboBox.Name = "CategoryComboBox";
-            CategoryComboBox.Size = new Size(253, 23);
+            CategoryComboBox.Size = new Size(292, 23);
             CategoryComboBox.TabIndex = 19;
             CategoryComboBox.SelectedIndexChanged += CategoryComboBox_SelectedIndexChanged;
             // 
             // DetailsListView
             // 
             DetailsListView.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader5, columnHeader4 });
+            DetailsListView.Font = new Font("Antipasto Pro DemiBold", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DetailsListView.FullRowSelect = true;
             DetailsListView.GridLines = true;
-            DetailsListView.Location = new Point(12, 280);
+            DetailsListView.Location = new Point(366, 178);
             DetailsListView.MultiSelect = false;
             DetailsListView.Name = "DetailsListView";
-            DetailsListView.Size = new Size(781, 187);
+            DetailsListView.Size = new Size(778, 187);
             DetailsListView.TabIndex = 22;
             DetailsListView.UseCompatibleStateImageBehavior = false;
             DetailsListView.View = View.Details;
@@ -116,83 +119,79 @@
             // Client
             // 
             Client.AutoSize = true;
-            Client.Font = new Font("Lato", 12F, FontStyle.Bold);
-            Client.Location = new Point(350, 9);
+            Client.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            Client.Location = new Point(341, 85);
             Client.Name = "Client";
-            Client.Size = new Size(52, 19);
+            Client.Size = new Size(47, 20);
             Client.TabIndex = 24;
             Client.Text = "Client";
             // 
             // ClientComboBox
             // 
             ClientComboBox.FormattingEnabled = true;
-            ClientComboBox.Location = new Point(352, 31);
+            ClientComboBox.Location = new Point(342, 105);
             ClientComboBox.Name = "ClientComboBox";
-            ClientComboBox.Size = new Size(253, 23);
+            ClientComboBox.Size = new Size(292, 23);
             ClientComboBox.TabIndex = 23;
             ClientComboBox.SelectedIndexChanged += ClientComboBox_SelectedIndexChanged;
             // 
             // button1
             // 
-            button1.Font = new Font("Lato", 14F);
-            button1.Location = new Point(16, 209);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            button1.Location = new Point(29, 381);
             button1.Name = "button1";
-            button1.Size = new Size(198, 30);
+            button1.Size = new Size(198, 40);
             button1.TabIndex = 25;
             button1.Text = "Add Details";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Lato", 12F);
-            label4.Location = new Point(16, 134);
-            label4.Name = "label4";
-            label4.Size = new Size(72, 19);
-            label4.TabIndex = 27;
-            label4.Text = "Quantity";
-            // 
             // QuantityTxtBox
             // 
-            QuantityTxtBox.Font = new Font("Lato", 12F);
-            QuantityTxtBox.Location = new Point(16, 156);
+            QuantityTxtBox.BorderStyle = BorderStyle.None;
+            QuantityTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
+            QuantityTxtBox.Location = new Point(976, 103);
+            QuantityTxtBox.Multiline = true;
             QuantityTxtBox.Name = "QuantityTxtBox";
-            QuantityTxtBox.Size = new Size(253, 27);
+            QuantityTxtBox.PlaceholderText = "Type Your Quantity";
+            QuantityTxtBox.Size = new Size(268, 23);
             QuantityTxtBox.TabIndex = 26;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Lato", 12F);
-            label2.Location = new Point(14, 76);
+            label2.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label2.Location = new Point(658, 84);
             label2.Name = "label2";
-            label2.Size = new Size(109, 19);
+            label2.Size = new Size(105, 20);
             label2.TabIndex = 29;
             label2.Text = "Product Name";
             // 
             // ProductNameComboBox
             // 
             ProductNameComboBox.FormattingEnabled = true;
-            ProductNameComboBox.Location = new Point(16, 98);
+            ProductNameComboBox.Location = new Point(660, 106);
             ProductNameComboBox.Name = "ProductNameComboBox";
-            ProductNameComboBox.Size = new Size(253, 23);
+            ProductNameComboBox.Size = new Size(292, 23);
             ProductNameComboBox.TabIndex = 30;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Lato", 12F);
-            label3.Location = new Point(491, 497);
+            label3.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label3.Location = new Point(921, 437);
             label3.Name = "label3";
-            label3.Size = new Size(43, 19);
+            label3.Size = new Size(40, 20);
             label3.TabIndex = 32;
             label3.Text = "Total";
             // 
             // TotalTxtBox
             // 
+            TotalTxtBox.BackColor = Color.White;
+            TotalTxtBox.BorderStyle = BorderStyle.FixedSingle;
             TotalTxtBox.Font = new Font("Lato", 12F);
-            TotalTxtBox.Location = new Point(540, 489);
+            TotalTxtBox.Location = new Point(970, 434);
             TotalTxtBox.Name = "TotalTxtBox";
             TotalTxtBox.ReadOnly = true;
             TotalTxtBox.Size = new Size(253, 27);
@@ -201,17 +200,19 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Lato", 12F);
-            label5.Location = new Point(462, 530);
+            label5.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label5.Location = new Point(892, 488);
             label5.Name = "label5";
-            label5.Size = new Size(72, 19);
+            label5.Size = new Size(66, 20);
             label5.TabIndex = 34;
             label5.Text = "Discount";
             // 
             // DiscountTxtBox
             // 
+            DiscountTxtBox.BackColor = Color.White;
+            DiscountTxtBox.BorderStyle = BorderStyle.FixedSingle;
             DiscountTxtBox.Font = new Font("Lato", 12F);
-            DiscountTxtBox.Location = new Point(540, 522);
+            DiscountTxtBox.Location = new Point(970, 480);
             DiscountTxtBox.Name = "DiscountTxtBox";
             DiscountTxtBox.ReadOnly = true;
             DiscountTxtBox.Size = new Size(253, 27);
@@ -221,7 +222,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Lato", 16F, FontStyle.Bold);
-            label6.Location = new Point(404, 585);
+            label6.Location = new Point(834, 530);
             label6.Name = "label6";
             label6.Size = new Size(130, 27);
             label6.TabIndex = 36;
@@ -229,8 +230,10 @@
             // 
             // GrandTotalTxtBox
             // 
+            GrandTotalTxtBox.BackColor = Color.White;
+            GrandTotalTxtBox.BorderStyle = BorderStyle.FixedSingle;
             GrandTotalTxtBox.Font = new Font("Lato", 16F, FontStyle.Bold);
-            GrandTotalTxtBox.Location = new Point(540, 579);
+            GrandTotalTxtBox.Location = new Point(970, 524);
             GrandTotalTxtBox.Name = "GrandTotalTxtBox";
             GrandTotalTxtBox.ReadOnly = true;
             GrandTotalTxtBox.Size = new Size(253, 33);
@@ -244,27 +247,29 @@
             // ComentTxtBox
             // 
             ComentTxtBox.AutoSize = true;
-            ComentTxtBox.Font = new Font("Lato", 12F);
-            ComentTxtBox.Location = new Point(350, 76);
+            ComentTxtBox.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            ComentTxtBox.Location = new Point(29, 156);
             ComentTxtBox.Name = "ComentTxtBox";
-            ComentTxtBox.Size = new Size(82, 19);
+            ComentTxtBox.Size = new Size(77, 20);
             ComentTxtBox.TabIndex = 38;
             ComentTxtBox.Text = "Client Info";
             // 
             // ClientInfoTxtBox
             // 
+            ClientInfoTxtBox.BackColor = Color.White;
+            ClientInfoTxtBox.BorderStyle = BorderStyle.FixedSingle;
             ClientInfoTxtBox.Font = new Font("Lato", 12F);
-            ClientInfoTxtBox.Location = new Point(350, 98);
+            ClientInfoTxtBox.Location = new Point(29, 178);
             ClientInfoTxtBox.Multiline = true;
             ClientInfoTxtBox.Name = "ClientInfoTxtBox";
             ClientInfoTxtBox.ReadOnly = true;
-            ClientInfoTxtBox.Size = new Size(331, 93);
+            ClientInfoTxtBox.Size = new Size(292, 187);
             ClientInfoTxtBox.TabIndex = 37;
             // 
             // SalesBtn
             // 
             SalesBtn.Font = new Font("Lato", 14F);
-            SalesBtn.Location = new Point(640, 641);
+            SalesBtn.Location = new Point(1128, 775);
             SalesBtn.Name = "SalesBtn";
             SalesBtn.Size = new Size(153, 49);
             SalesBtn.TabIndex = 39;
@@ -272,11 +277,47 @@
             SalesBtn.UseVisualStyleBackColor = true;
             SalesBtn.Click += SalesBtn_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Lato", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(634, 9);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(97, 42);
+            label1.TabIndex = 40;
+            label1.Text = "Sales";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Black;
+            panel1.Location = new Point(980, 132);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(288, 1);
+            panel1.TabIndex = 41;
+            // 
+            // CloseBtn
+            // 
+            CloseBtn.FlatStyle = FlatStyle.Flat;
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.ForeColor = Color.IndianRed;
+            CloseBtn.Location = new Point(1197, 8);
+            CloseBtn.Name = "CloseBtn";
+            CloseBtn.Size = new Size(82, 51);
+            CloseBtn.TabIndex = 42;
+            CloseBtn.Text = "Close";
+            CloseBtn.UseVisualStyleBackColor = true;
+            CloseBtn.Click += CloseBtn_Click;
+            // 
             // Sales
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 702);
+            BackColor = Color.White;
+            ClientSize = new Size(1286, 608);
+            Controls.Add(CloseBtn);
+            Controls.Add(panel1);
+            Controls.Add(label1);
             Controls.Add(SalesBtn);
             Controls.Add(ComentTxtBox);
             Controls.Add(ClientInfoTxtBox);
@@ -288,7 +329,6 @@
             Controls.Add(TotalTxtBox);
             Controls.Add(ProductNameComboBox);
             Controls.Add(label2);
-            Controls.Add(label4);
             Controls.Add(QuantityTxtBox);
             Controls.Add(button1);
             Controls.Add(Client);
@@ -296,7 +336,9 @@
             Controls.Add(DetailsListView);
             Controls.Add(label9);
             Controls.Add(CategoryComboBox);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Sales";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Sales";
             FormClosed += Sales_FormClosed;
             Load += Sales_Load;
@@ -315,7 +357,6 @@
         private Label Client;
         private ComboBox ClientComboBox;
         private Button button1;
-        private Label label4;
         private TextBox QuantityTxtBox;
         private Label label2;
         private ComboBox ProductNameComboBox;
@@ -331,5 +372,8 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private Button SalesBtn;
+        private Label label1;
+        private Panel panel1;
+        private Button CloseBtn;
     }
 }
