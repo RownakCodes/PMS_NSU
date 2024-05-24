@@ -34,6 +34,7 @@
             ExitBtn = new Button();
             AddClientBtn = new Button();
             SalesBtn = new Button();
+            SeeClientsBtn = new Button();
             SuspendLayout();
             // 
             // AddProductBtn
@@ -102,11 +103,23 @@
             SalesBtn.UseVisualStyleBackColor = true;
             SalesBtn.Click += SalesBtn_Click;
             // 
+            // SeeClientsBtn
+            // 
+            SeeClientsBtn.Font = new Font("Lato", 14F);
+            SeeClientsBtn.Location = new Point(614, 45);
+            SeeClientsBtn.Name = "SeeClientsBtn";
+            SeeClientsBtn.Size = new Size(257, 57);
+            SeeClientsBtn.TabIndex = 26;
+            SeeClientsBtn.Text = "See Clients";
+            SeeClientsBtn.UseVisualStyleBackColor = true;
+            SeeClientsBtn.Click += SeeClientsBtn_Click;
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1039, 450);
+            Controls.Add(SeeClientsBtn);
             Controls.Add(SalesBtn);
             Controls.Add(AddClientBtn);
             Controls.Add(ExitBtn);
@@ -128,5 +141,6 @@
         private Button ExitBtn;
         private Button AddClientBtn;
         private Button SalesBtn;
+        private Button SeeClientsBtn;
     }
 }
