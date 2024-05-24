@@ -43,14 +43,19 @@
             PriceTxtBox = new TextBox();
             label7 = new Label();
             DescriptionTxtBox = new TextBox();
-            label8 = new Label();
-            textBox1 = new TextBox();
+            CategoryComboBox = new ComboBox();
+            label9 = new Label();
+            button1 = new Button();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            DetailsListView = new ListView();
             SuspendLayout();
             // 
             // SaveBtn
             // 
             SaveBtn.Font = new Font("Lato", 14F);
-            SaveBtn.Location = new Point(934, 430);
+            SaveBtn.Location = new Point(963, 505);
             SaveBtn.Name = "SaveBtn";
             SaveBtn.Size = new Size(129, 57);
             SaveBtn.TabIndex = 0;
@@ -185,33 +190,73 @@
             DescriptionTxtBox.Size = new Size(682, 168);
             DescriptionTxtBox.TabIndex = 14;
             // 
-            // label8
+            // CategoryComboBox
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Lato", 12F, FontStyle.Bold);
-            label8.Location = new Point(950, 351);
-            label8.Name = "label8";
-            label8.Size = new Size(114, 19);
-            label8.TabIndex = 16;
-            label8.Text = "Total Valuation";
+            CategoryComboBox.FormattingEnabled = true;
+            CategoryComboBox.Location = new Point(840, 377);
+            CategoryComboBox.Name = "CategoryComboBox";
+            CategoryComboBox.Size = new Size(253, 23);
+            CategoryComboBox.TabIndex = 17;
             // 
-            // textBox1
+            // label9
             // 
-            textBox1.Font = new Font("Lato", 12F, FontStyle.Bold);
-            textBox1.Location = new Point(732, 373);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(331, 27);
-            textBox1.TabIndex = 15;
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            label9.AutoSize = true;
+            label9.Font = new Font("Lato", 12F, FontStyle.Bold);
+            label9.Location = new Point(838, 355);
+            label9.Name = "label9";
+            label9.Size = new Size(76, 19);
+            label9.TabIndex = 18;
+            label9.Text = "Category";
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Lato", 14F);
+            button1.Location = new Point(18, 344);
+            button1.Name = "button1";
+            button1.Size = new Size(248, 30);
+            button1.TabIndex = 20;
+            button1.Text = "Add Details";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "Strip size";
+            columnHeader1.Width = 220;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Medicine Left";
+            columnHeader2.Width = 220;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "Expiry Date";
+            columnHeader3.Width = 220;
+            // 
+            // DetailsListView
+            // 
+            DetailsListView.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+            DetailsListView.FullRowSelect = true;
+            DetailsListView.GridLines = true;
+            DetailsListView.Location = new Point(18, 380);
+            DetailsListView.MultiSelect = false;
+            DetailsListView.Name = "DetailsListView";
+            DetailsListView.Size = new Size(671, 187);
+            DetailsListView.TabIndex = 21;
+            DetailsListView.UseCompatibleStateImageBehavior = false;
+            DetailsListView.View = View.Details;
+            DetailsListView.KeyDown += DetailsListView_KeyDown;
             // 
             // AddProduct
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1128, 545);
-            Controls.Add(label8);
-            Controls.Add(textBox1);
+            ClientSize = new Size(1128, 666);
+            Controls.Add(DetailsListView);
+            Controls.Add(button1);
+            Controls.Add(label9);
+            Controls.Add(CategoryComboBox);
             Controls.Add(DescriptionTxtBox);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -229,6 +274,7 @@
             Controls.Add(SaveBtn);
             Name = "AddProduct";
             Text = "AddProduct";
+            FormClosed += AddProduct_FormClosed;
             Load += AddProduct_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -251,7 +297,12 @@
         private TextBox PriceTxtBox;
         private Label label7;
         private TextBox DescriptionTxtBox;
-        private Label label8;
-        private TextBox textBox1;
+        private ComboBox CategoryComboBox;
+        private Label label9;
+        private Button button1;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ListView DetailsListView;
     }
 }

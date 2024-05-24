@@ -1,3 +1,5 @@
+using NSU_PMS.Forms.Employee;
+using NSU_PMS.Forms.General;
 using NSU_PMS.Forms.Products;
 
 namespace NSU_PMS
@@ -13,7 +15,7 @@ namespace NSU_PMS
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new AddProduct());
+            Application.Run(Global.signin);
         }
     }
 }
