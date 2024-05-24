@@ -36,13 +36,16 @@
             SalesBtn = new Button();
             SeeClientsBtn = new Button();
             label3 = new Label();
+            AllEmpBtn = new Button();
+            AllProductsBtn = new Button();
+            SeeSalesBtn = new Button();
             SuspendLayout();
             // 
             // AddProductBtn
             // 
             AddProductBtn.BackColor = Color.Transparent;
             AddProductBtn.FlatStyle = FlatStyle.Popup;
-            AddProductBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddProductBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             AddProductBtn.Location = new Point(40, 99);
             AddProductBtn.Margin = new Padding(4, 3, 4, 3);
             AddProductBtn.Name = "AddProductBtn";
@@ -55,7 +58,7 @@
             // AddCategoryBtn
             // 
             AddCategoryBtn.FlatStyle = FlatStyle.Popup;
-            AddCategoryBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddCategoryBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             AddCategoryBtn.Location = new Point(40, 200);
             AddCategoryBtn.Margin = new Padding(4, 3, 4, 3);
             AddCategoryBtn.Name = "AddCategoryBtn";
@@ -68,7 +71,7 @@
             // AddEmployeeBtn
             // 
             AddEmployeeBtn.FlatStyle = FlatStyle.Popup;
-            AddEmployeeBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddEmployeeBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             AddEmployeeBtn.Location = new Point(632, 200);
             AddEmployeeBtn.Margin = new Padding(4, 3, 4, 3);
             AddEmployeeBtn.Name = "AddEmployeeBtn";
@@ -81,9 +84,9 @@
             // ExitBtn
             // 
             ExitBtn.FlatStyle = FlatStyle.Popup;
-            ExitBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            ExitBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             ExitBtn.ForeColor = Color.IndianRed;
-            ExitBtn.Location = new Point(337, 303);
+            ExitBtn.Location = new Point(337, 423);
             ExitBtn.Margin = new Padding(4, 3, 4, 3);
             ExitBtn.Name = "ExitBtn";
             ExitBtn.Size = new Size(257, 51);
@@ -95,7 +98,7 @@
             // AddClientBtn
             // 
             AddClientBtn.FlatStyle = FlatStyle.Popup;
-            AddClientBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            AddClientBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             AddClientBtn.Location = new Point(337, 99);
             AddClientBtn.Margin = new Padding(4, 3, 4, 3);
             AddClientBtn.Name = "AddClientBtn";
@@ -108,7 +111,7 @@
             // SalesBtn
             // 
             SalesBtn.FlatStyle = FlatStyle.Popup;
-            SalesBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            SalesBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             SalesBtn.Location = new Point(337, 200);
             SalesBtn.Margin = new Padding(4, 3, 4, 3);
             SalesBtn.Name = "SalesBtn";
@@ -121,7 +124,7 @@
             // SeeClientsBtn
             // 
             SeeClientsBtn.FlatStyle = FlatStyle.Popup;
-            SeeClientsBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
+            SeeClientsBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
             SeeClientsBtn.Location = new Point(632, 99);
             SeeClientsBtn.Margin = new Padding(4, 3, 4, 3);
             SeeClientsBtn.Name = "SeeClientsBtn";
@@ -142,12 +145,54 @@
             label3.TabIndex = 27;
             label3.Text = "Dash Board";
             // 
+            // AllEmpBtn
+            // 
+            AllEmpBtn.FlatStyle = FlatStyle.Popup;
+            AllEmpBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AllEmpBtn.Location = new Point(632, 309);
+            AllEmpBtn.Margin = new Padding(4, 3, 4, 3);
+            AllEmpBtn.Name = "AllEmpBtn";
+            AllEmpBtn.Size = new Size(257, 51);
+            AllEmpBtn.TabIndex = 28;
+            AllEmpBtn.Text = "See Employees";
+            AllEmpBtn.UseVisualStyleBackColor = true;
+            AllEmpBtn.Click += AllEmpBtn_Click;
+            // 
+            // AllProductsBtn
+            // 
+            AllProductsBtn.FlatStyle = FlatStyle.Popup;
+            AllProductsBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AllProductsBtn.Location = new Point(49, 309);
+            AllProductsBtn.Margin = new Padding(4, 3, 4, 3);
+            AllProductsBtn.Name = "AllProductsBtn";
+            AllProductsBtn.Size = new Size(257, 51);
+            AllProductsBtn.TabIndex = 29;
+            AllProductsBtn.Text = "See Products";
+            AllProductsBtn.UseVisualStyleBackColor = true;
+            AllProductsBtn.Click += AllProductsBtn_Click;
+            // 
+            // SeeSalesBtn
+            // 
+            SeeSalesBtn.FlatStyle = FlatStyle.Popup;
+            SeeSalesBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            SeeSalesBtn.Location = new Point(337, 309);
+            SeeSalesBtn.Margin = new Padding(4, 3, 4, 3);
+            SeeSalesBtn.Name = "SeeSalesBtn";
+            SeeSalesBtn.Size = new Size(257, 51);
+            SeeSalesBtn.TabIndex = 30;
+            SeeSalesBtn.Text = "See Sales";
+            SeeSalesBtn.UseVisualStyleBackColor = true;
+            SeeSalesBtn.Click += SeeSalesBtn_Click;
+            // 
             // DashBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(934, 410);
+            ClientSize = new Size(934, 564);
+            Controls.Add(SeeSalesBtn);
+            Controls.Add(AllProductsBtn);
+            Controls.Add(AllEmpBtn);
             Controls.Add(label3);
             Controls.Add(SeeClientsBtn);
             Controls.Add(SalesBtn);
@@ -177,5 +222,8 @@
         private Button SalesBtn;
         private Button SeeClientsBtn;
         private Label label3;
+        private Button AllEmpBtn;
+        private Button AllProductsBtn;
+        private Button SeeSalesBtn;
     }
 }

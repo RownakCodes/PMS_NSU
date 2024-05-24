@@ -1,6 +1,6 @@
-﻿namespace NSU_PMS.Forms.Client
+﻿namespace NSU_PMS.Forms.Employee
 {
-    partial class AllClients
+    partial class AllEmployees
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            CloseBtn = new Button();
+            label9 = new Label();
             DetailsListView = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
@@ -35,9 +37,30 @@
             columnHeader5 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader6 = new ColumnHeader();
-            label9 = new Label();
-            CloseBtn = new Button();
             SuspendLayout();
+            // 
+            // CloseBtn
+            // 
+            CloseBtn.FlatStyle = FlatStyle.Flat;
+            CloseBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.ForeColor = Color.IndianRed;
+            CloseBtn.Location = new Point(1373, 7);
+            CloseBtn.Name = "CloseBtn";
+            CloseBtn.Size = new Size(82, 51);
+            CloseBtn.TabIndex = 31;
+            CloseBtn.Text = "Close";
+            CloseBtn.UseVisualStyleBackColor = true;
+            CloseBtn.Click += CloseBtn_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Microsoft Sans Serif", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(23, 23);
+            label9.Name = "label9";
+            label9.Size = new Size(198, 33);
+            label9.TabIndex = 30;
+            label9.Text = "All Employee";
             // 
             // DetailsListView
             // 
@@ -45,14 +68,13 @@
             DetailsListView.Font = new Font("Lato", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DetailsListView.FullRowSelect = true;
             DetailsListView.GridLines = true;
-            DetailsListView.Location = new Point(12, 86);
+            DetailsListView.Location = new Point(14, 81);
             DetailsListView.MultiSelect = false;
             DetailsListView.Name = "DetailsListView";
             DetailsListView.Size = new Size(1441, 346);
-            DetailsListView.TabIndex = 23;
+            DetailsListView.TabIndex = 29;
             DetailsListView.UseCompatibleStateImageBehavior = false;
             DetailsListView.View = View.Details;
-            DetailsListView.SelectedIndexChanged += DetailsListView_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
@@ -84,50 +106,27 @@
             columnHeader6.Text = "Comments";
             columnHeader6.Width = 220;
             // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 21.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(21, 28);
-            label9.Name = "label9";
-            label9.Size = new Size(157, 33);
-            label9.TabIndex = 24;
-            label9.Text = "All Clients";
-            // 
-            // CloseBtn
-            // 
-            CloseBtn.FlatStyle = FlatStyle.Flat;
-            CloseBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CloseBtn.ForeColor = Color.IndianRed;
-            CloseBtn.Location = new Point(1371, 12);
-            CloseBtn.Name = "CloseBtn";
-            CloseBtn.Size = new Size(82, 51);
-            CloseBtn.TabIndex = 28;
-            CloseBtn.Text = "Close";
-            CloseBtn.UseVisualStyleBackColor = true;
-            CloseBtn.Click += CloseBtn_Click;
-            // 
-            // AllClients
+            // AllEmployees
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1465, 450);
+            ClientSize = new Size(1468, 450);
             Controls.Add(CloseBtn);
             Controls.Add(label9);
             Controls.Add(DetailsListView);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "AllClients";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "AllClients";
-            FormClosed += AllClients_FormClosed;
-            Load += AllClients_Load;
+            Name = "AllEmployees";
+            Text = "AllEmployees";
+            FormClosed += AllEmployees_FormClosed;
+            Load += AllEmployees_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private Button CloseBtn;
+        private Label label9;
         private ListView DetailsListView;
         private ColumnHeader columnHeader1;
         private ColumnHeader columnHeader2;
@@ -135,7 +134,5 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader6;
-        private Label label9;
-        private Button CloseBtn;
     }
 }

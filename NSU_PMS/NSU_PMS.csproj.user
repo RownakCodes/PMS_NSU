@@ -10,7 +10,13 @@
     <Compile Update="Forms\Employee\AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Employee\AllEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Employee\SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\General\AllSales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\General\DashBoard.cs">
@@ -23,6 +29,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Products\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Products\AllProducts.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
