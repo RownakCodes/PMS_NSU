@@ -45,7 +45,7 @@
             // 
             AddProductBtn.BackColor = Color.Transparent;
             AddProductBtn.FlatStyle = FlatStyle.Popup;
-            AddProductBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AddProductBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             AddProductBtn.Location = new Point(40, 99);
             AddProductBtn.Margin = new Padding(4, 3, 4, 3);
             AddProductBtn.Name = "AddProductBtn";
@@ -58,7 +58,7 @@
             // AddCategoryBtn
             // 
             AddCategoryBtn.FlatStyle = FlatStyle.Popup;
-            AddCategoryBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AddCategoryBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             AddCategoryBtn.Location = new Point(40, 200);
             AddCategoryBtn.Margin = new Padding(4, 3, 4, 3);
             AddCategoryBtn.Name = "AddCategoryBtn";
@@ -71,7 +71,7 @@
             // AddEmployeeBtn
             // 
             AddEmployeeBtn.FlatStyle = FlatStyle.Popup;
-            AddEmployeeBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AddEmployeeBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             AddEmployeeBtn.Location = new Point(632, 200);
             AddEmployeeBtn.Margin = new Padding(4, 3, 4, 3);
             AddEmployeeBtn.Name = "AddEmployeeBtn";
@@ -84,7 +84,7 @@
             // ExitBtn
             // 
             ExitBtn.FlatStyle = FlatStyle.Popup;
-            ExitBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            ExitBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             ExitBtn.ForeColor = Color.IndianRed;
             ExitBtn.Location = new Point(337, 423);
             ExitBtn.Margin = new Padding(4, 3, 4, 3);
@@ -98,7 +98,7 @@
             // AddClientBtn
             // 
             AddClientBtn.FlatStyle = FlatStyle.Popup;
-            AddClientBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AddClientBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             AddClientBtn.Location = new Point(337, 99);
             AddClientBtn.Margin = new Padding(4, 3, 4, 3);
             AddClientBtn.Name = "AddClientBtn";
@@ -111,7 +111,7 @@
             // SalesBtn
             // 
             SalesBtn.FlatStyle = FlatStyle.Popup;
-            SalesBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            SalesBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             SalesBtn.Location = new Point(337, 200);
             SalesBtn.Margin = new Padding(4, 3, 4, 3);
             SalesBtn.Name = "SalesBtn";
@@ -124,7 +124,7 @@
             // SeeClientsBtn
             // 
             SeeClientsBtn.FlatStyle = FlatStyle.Popup;
-            SeeClientsBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            SeeClientsBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             SeeClientsBtn.Location = new Point(632, 99);
             SeeClientsBtn.Margin = new Padding(4, 3, 4, 3);
             SeeClientsBtn.Name = "SeeClientsBtn";
@@ -148,7 +148,7 @@
             // AllEmpBtn
             // 
             AllEmpBtn.FlatStyle = FlatStyle.Popup;
-            AllEmpBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AllEmpBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             AllEmpBtn.Location = new Point(632, 309);
             AllEmpBtn.Margin = new Padding(4, 3, 4, 3);
             AllEmpBtn.Name = "AllEmpBtn";
@@ -161,7 +161,7 @@
             // AllProductsBtn
             // 
             AllProductsBtn.FlatStyle = FlatStyle.Popup;
-            AllProductsBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            AllProductsBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             AllProductsBtn.Location = new Point(49, 309);
             AllProductsBtn.Margin = new Padding(4, 3, 4, 3);
             AllProductsBtn.Name = "AllProductsBtn";
@@ -174,7 +174,7 @@
             // SeeSalesBtn
             // 
             SeeSalesBtn.FlatStyle = FlatStyle.Popup;
-            SeeSalesBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            SeeSalesBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             SeeSalesBtn.Location = new Point(337, 309);
             SeeSalesBtn.Margin = new Padding(4, 3, 4, 3);
             SeeSalesBtn.Name = "SeeSalesBtn";

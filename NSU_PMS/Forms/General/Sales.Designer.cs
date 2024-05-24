@@ -60,10 +60,10 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label9.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
             label9.Location = new Point(29, 84);
             label9.Name = "label9";
-            label9.Size = new Size(81, 20);
+            label9.Size = new Size(71, 20);
             label9.TabIndex = 20;
             label9.Text = "Category";
             // 
@@ -79,7 +79,7 @@
             // DetailsListView
             // 
             DetailsListView.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader5, columnHeader4 });
-            DetailsListView.Font = new Font("Microsoft Sans Serif", 11.249999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DetailsListView.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
             DetailsListView.FullRowSelect = true;
             DetailsListView.GridLines = true;
             DetailsListView.Location = new Point(366, 178);
@@ -119,10 +119,10 @@
             // Client
             // 
             Client.AutoSize = true;
-            Client.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            Client.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
             Client.Location = new Point(341, 85);
             Client.Name = "Client";
-            Client.Size = new Size(55, 20);
+            Client.Size = new Size(47, 20);
             Client.TabIndex = 24;
             Client.Text = "Client";
             // 
@@ -138,7 +138,7 @@
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold);
+            button1.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(29, 381);
             button1.Name = "button1";
             button1.Size = new Size(198, 40);
@@ -150,7 +150,7 @@
             // QuantityTxtBox
             // 
             QuantityTxtBox.BorderStyle = BorderStyle.None;
-            QuantityTxtBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            QuantityTxtBox.Font = new Font("Antipasto Pro Bold", 12F, FontStyle.Bold);
             QuantityTxtBox.Location = new Point(976, 103);
             QuantityTxtBox.Multiline = true;
             QuantityTxtBox.Name = "QuantityTxtBox";
@@ -161,10 +161,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            label2.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
             label2.Location = new Point(658, 84);
             label2.Name = "label2";
-            label2.Size = new Size(122, 20);
+            label2.Size = new Size(105, 20);
             label2.TabIndex = 29;
             label2.Text = "Product Name";
             // 
@@ -179,10 +179,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label3.Location = new Point(915, 436);
+            label3.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label3.Location = new Point(920, 436);
             label3.Name = "label3";
-            label3.Size = new Size(49, 20);
+            label3.Size = new Size(40, 20);
             label3.TabIndex = 32;
             label3.Text = "Total";
             // 
@@ -200,10 +200,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            label5.Location = new Point(884, 487);
+            label5.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
+            label5.Location = new Point(891, 484);
             label5.Name = "label5";
-            label5.Size = new Size(80, 20);
+            label5.Size = new Size(66, 20);
             label5.TabIndex = 34;
             label5.Text = "Discount";
             // 
@@ -221,10 +221,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Lato", 16F, FontStyle.Bold);
-            label6.Location = new Point(834, 530);
+            label6.Font = new Font("Antipasto Pro Bold", 15.7499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(839, 528);
             label6.Name = "label6";
-            label6.Size = new Size(130, 27);
+            label6.Size = new Size(119, 26);
             label6.TabIndex = 36;
             label6.Text = "Grand Total";
             // 
@@ -247,10 +247,10 @@
             // ComentTxtBox
             // 
             ComentTxtBox.AutoSize = true;
-            ComentTxtBox.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
+            ComentTxtBox.Font = new Font("Antipasto Pro DemiBold", 12F, FontStyle.Bold);
             ComentTxtBox.Location = new Point(29, 156);
             ComentTxtBox.Name = "ComentTxtBox";
-            ComentTxtBox.Size = new Size(92, 20);
+            ComentTxtBox.Size = new Size(77, 20);
             ComentTxtBox.TabIndex = 38;
             ComentTxtBox.Text = "Client Info";
             // 
@@ -299,7 +299,7 @@
             // CloseBtn
             // 
             CloseBtn.FlatStyle = FlatStyle.Flat;
-            CloseBtn.Font = new Font("Microsoft Sans Serif", 14.2499981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CloseBtn.Font = new Font("Antipasto Pro DemiBold", 14.2499981F, FontStyle.Bold);
             CloseBtn.ForeColor = Color.IndianRed;
             CloseBtn.Location = new Point(1197, 8);
             CloseBtn.Name = "CloseBtn";
