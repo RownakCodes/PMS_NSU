@@ -79,5 +79,12 @@ namespace NSU_PMS.Forms.General
             Global.signin.Close();
 
         }
+
+        private void SeeClientsBtn_Click(object sender, EventArgs e)
+        {
+            AllClients allClients = new AllClients();
+            allClients.Show();
+            this.Hide();
+        }
     }
 }

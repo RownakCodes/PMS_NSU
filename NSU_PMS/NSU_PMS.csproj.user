@@ -4,6 +4,9 @@
     <Compile Update="Forms\Client\AddClient.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\Client\AllClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Employee\AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
